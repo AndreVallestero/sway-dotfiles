@@ -187,7 +187,7 @@ mode "resize" {
     # down will grow the containers height
     bindsym $left resize shrink width 10px
     bindsym $down resize grow height 10px
-    bindsym $up resize shrink height 10px
+    bindsym $up resize shrink height 10px7
     bindsym $right resize grow width 10px
 
     # Ditto, with arrow keys
@@ -219,6 +219,12 @@ bar {
         inactive_workspace #32323200 #32323200 #5c5c5c
     }
 }
+
+# class			border	backgr	text	indictr	child_border
+client.focused		#458588	#1d2021	#f9f5d7	#1d2021	#458588
+client.focused_inactive	#1d2021	#1d2021	#f9f5d7	#1d2021	#1d2021
+client.unfocused	#1d2021	#1d2021	#f9f5d7	#1d2021	#1d2021
+client.urgent		#cc241d	#1d2021	#f9f5d7	#1d2021	#cc241d
 
 xwayland disable
 
