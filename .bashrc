@@ -10,7 +10,7 @@ alias ls='ls --color=auto'
 # printf "\ue0a0 \ue0a1 \ue0a2 \ue0a3 \ue0b0 \ue0b1 etc"
 case "$TERM" in
 xterm*|rxvt*)
-    PS1=$'\[\e[46m\]\e[30m \[$(tput bold)\]\h\[$(tput sgr0)\] \[\e[36m\]\[\e[45m\]\ue0b0\e[30m \[$(tput bold)\]\u\[$(tput sgr0)\] \[\e[35m\]\[\e[44m\]\ue0b0\e[30m \[$(tput bold)\]\W\[$(tput sgr0)\] \[\e[34m\]\[\e[40m\]\ue0b0\[$(tput sgr0)\] '
+    PS1=$'\[\e[46m\]\e[37m \[$(tput bold)\]\h \[$(tput sgr0)\]\[\e[36m\]\[\e[45m\]\ue0b0\e[37m \[$(tput bold)\]\u \[$(tput sgr0)\]\[\e[35m\]\[\e[44m\]\u e0b0\e[37m\[$(tput bold)\]\W\[$(tput sgr0)\] \[\e[34m\]\[\e[40m\]\ue0b0\[$(tput sgr0)\] '
     ;;
 *)
     ;;
