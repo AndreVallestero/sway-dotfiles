@@ -28,7 +28,7 @@ default_border pixel 1
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway-arch-reverse-wallpaper-tiled.png fill
+output * bg ~/.config/wall.png fill
 #
 # Example configuration:
 #
@@ -208,23 +208,27 @@ bindsym $mod+r mode "resize"
 # Read `man 5 sway-bar` for more information about this section.
 bar {
     position bottom
+    # 8 or 11 or 14 work best
+    font RobotoMono Nerd Font 8
 
     # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
-    status_command while date +'%Y-%m-%d %l:%M:%S %p'; do sleep 1; done
+    status_command i3status-rs ~/.config/sway/status.toml
 
     colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
+        statusline #ebdbb2
+	background #28282800
+	# class			border		bgrnd	text
+	focused_workspace	#45858800	#458588 #ebdbb2
+        inactive_workspace	#28282800	#1d2021	#a89984
+	urgent_workspace	#cc241d00	#cc241d	#ebdbb2
     }
 }
 
 # class			border	backgr	text	indictr	child_border
-client.focused		#458588	#1d2021	#f9f5d7	#1d2021	#458588
-client.focused_inactive	#1d2021	#1d2021	#f9f5d7	#1d2021	#1d2021
-client.unfocused	#1d2021	#1d2021	#f9f5d7	#1d2021	#1d2021
-client.urgent		#cc241d	#1d2021	#f9f5d7	#1d2021	#cc241d
+client.focused		#458588	#1d2021	#a89984	#458588	#458588
+client.focused_inactive	#282828	#1d2021	#a89984	#282828	#282828
+client.unfocused	#282828	#1d2021	#a89984	#282828	#282828
+client.urgent		#cc241d	#1d2021	#a89984	#cc241d	#cc241d
 
 xwayland disable
 
