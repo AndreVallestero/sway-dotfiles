@@ -219,7 +219,7 @@ bar {
 	background #28282800
 	# class			border		bgrnd	text
 	focused_workspace	#45858800	#458588 #ebdbb2
-        inactive_workspace	#28282800	#1d2021	#a89984
+        inactive_workspace	#28282800	#282828	#a89984
 	urgent_workspace	#cc241d00	#cc241d	#ebdbb2
     }
 }
