@@ -1,5 +1,9 @@
-theme = "gruvbox-dark"
 icons = "awesome"
+
+[theme]
+name = "gruvbox-dark"
+[theme.overrides]
+alternating_tint_bg = "#14100e"
 
 [[block]]
 block = "disk_space"
