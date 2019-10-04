@@ -6,12 +6,11 @@ alternating_tint_bg = "#14100e"
 [icons]
 name = "awesome"
 [icons.overrides]
-memory_mem = "🧠"
-backlight_empty = "▪️"
-backlight_partial1 = "⚫"
-backlight_partial2 = "🔅"
+backlight_empty = "🔆"
+backlight_partial1 = "🔆"
+backlight_partial2 = "🔆"
 backlight_partial3 = "🔆"
-backlight_full = "☀️"
+backlight_full = "🔆"
 
 [[block]]
 block = "sound"
