@@ -18,8 +18,8 @@ block = "sound"
 [[block]]
 block = "backlight"
 
-[[block]]
-block = "battery"
+#[[block]]
+#block = "battery"
 
 [[block]]
 block = "memory"
@@ -30,7 +30,7 @@ format_swap = "{SUp}%"
 [[block]]
 block = "cpu"
 interval = 1
-format = "{barchart}@{frequency}GHz"
+format = "{barchart}"#@{frequency}GHz"
 
 [[block]]
 block = "time"
