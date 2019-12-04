@@ -13,24 +13,31 @@ backlight_partial3 = "☀️"
 backlight_full = "☀️"
 
 [[block]]
+block = "pacman"
+
+[[block]]
 block = "sound"
 
 [[block]]
 block = "backlight"
 
+[[block]]
+block = "battery"
+device = "DisplayDevice"
+driver = "upower"
+format = "{percentage}% {time}"
+
 #[[block]]
-#block = "battery"
+#block = "speedtest"
 
 [[block]]
 block = "memory"
-display_type = "memory"
-format_mem = "{Mup}%"
-format_swap = "{SUp}%"
+format_mem = "{Mum}MB/{MTm}MB"
 
 [[block]]
 block = "cpu"
 interval = 1
-format = "{barchart}"#@{frequency}GHz"
+format = "{barchart}{utilization}%"
 
 [[block]]
 block = "time"
